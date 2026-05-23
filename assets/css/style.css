@@ -282,7 +282,6 @@ p {
   color: var(--ink-soft);
   margin-bottom: 32px;
   font-size: 1rem;
-  max-width: 740px;
 }
 
 hr.divider {
