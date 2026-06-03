@@ -182,17 +182,17 @@
       </p>
       <p class="section-intro">
         <strong>Metrics.</strong>
-        <em>WER</em> (Whisper-large-v3 word error rate, lower is better) and
-        <em>SIM</em> (cosine similarity between WavLM-Large speaker-verification
-        embeddings of the generation and the reference, higher is better)
-        measure speech intelligibility and speaker fidelity, respectively.
-        <em>FAD</em> is the Fréchet distance in VGGish embedding space
-        (distributional fidelity, lower is better). <em>CLAP</em> is the
-        LAION-CLAP text–audio cosine similarity (prompt adherence, higher is
-        better). <em>MOS</em> is the subjective overall-quality score for
-        speech (1–5, higher is better); <em>MOS-Q</em> and <em>MOS-T</em>
-        are the subjective quality and text-relevance scores for sound and
-        music (1–5, higher is better).
+        <em>WER</em> (word error rate, lower is better) and <em>SIM</em>
+        (cosine similarity between speaker embeddings of the generation and
+        the reference, higher is better) measure speech intelligibility and
+        speaker fidelity, respectively.
+        <em>FAD</em> (Fréchet audio distance, lower is better) measures
+        distributional fidelity. <em>CLAP</em> (text–audio cosine similarity,
+        higher is better) measures prompt adherence.
+        <em>MOS</em> is the subjective overall-quality score for speech
+        (1–5, higher is better); <em>MOS-Q</em> and <em>MOS-T</em> are the
+        subjective quality and text-relevance scores for sound and music
+        (1–5, higher is better).
       </p>
 
       <h3>Text-to-speech</h3>
