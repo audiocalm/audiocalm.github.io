@@ -127,31 +127,48 @@
 
     <!-- ====== TTS DEMO ====== -->
     <section id="demo-tts">
-      <h2><span class="sec-num">2</span>Zero-Shot Text-to-Speech Comparisons in LibriTTS</h2>
+      <h2><span class="sec-num">2</span>Zero-Shot Text-to-Speech Comparisons on LibriTTS</h2>
       <p class="section-intro">
-        A reference utterance is prepended as the speaker prompt. We compare
-        AudioCALM against modality-specific TTS systems (F5-TTS, CosyVoice 3.0) and
-        unified baselines (UniAudio, UniMoE-Audio, UniFlow-Audio, Ming-omni).
+        A reference utterance is prepended as the speaker prompt. AudioCALM is
+        compared quantitatively against modality-specific TTS systems (F5-TTS,
+        CosyVoice 3.0) and unified baselines (UniAudio, UniMoE-Audio,
+        UniFlow-Audio, Ming-omni); full numbers are in the paper and summarized
+        in the Results section below. Each card highlights the strongest
+        baseline in each group — CosyVoice 3.0 (modality-specific) and
+        Ming-omni (unified) — alongside Ground Truth and AudioCALM; the full
+        baseline lineup is one click away under <em>Compare baselines</em>.
       </p>
       <div id="tts-samples" class="samples"></div>
     </section>
 
     <!-- ====== SOUND DEMO ====== -->
     <section id="demo-sound">
-      <h2><span class="sec-num">3</span>Text-to-Sound Comparisons in AudioCaps</h2>
+      <h2><span class="sec-num">3</span>Text-to-Sound Comparisons on AudioCaps</h2>
       <p class="section-intro">
-        Held-out captions covering everyday acoustic events. Compared against
-        AudioLDM 2-Large, TangoFlux, Stable Audio Open, and the unified baselines.
+        Held-out captions covering everyday acoustic events. AudioCALM is
+        compared quantitatively against AudioLDM 2-Large, TangoFlux, Stable
+        Audio Open, and the unified baselines (UniAudio, UniFlow-Audio,
+        Ming-omni); full numbers are in the paper and summarized in the
+        Results section below. Each card highlights the strongest baseline in
+        each group — TangoFlux (modality-specific) and Ming-omni (unified) —
+        alongside Ground Truth and AudioCALM; the full baseline lineup is one
+        click away under <em>Compare baselines</em>.
       </p>
       <div id="sound-samples" class="samples"></div>
     </section>
 
     <!-- ====== MUSIC DEMO ====== -->
     <section id="demo-music">
-      <h2><span class="sec-num">4</span>Text-to-Music Comparisons in Song-Describer</h2>
+      <h2><span class="sec-num">4</span>Text-to-Music Comparisons on Song-Describer</h2>
       <p class="section-intro">
-        Held-out music captions spanning multiple genres. Compared against
-        MusicGen-Large, Stable Audio Open, and the unified baselines.
+        Held-out music captions spanning multiple genres. AudioCALM is
+        compared quantitatively against MusicGen-Large, Stable Audio Open,
+        and the unified baselines (UniAudio, UniMoE-Audio, UniFlow-Audio,
+        Ming-omni); full numbers are in the paper and summarized in the
+        Results section below. Each card highlights the strongest baseline in
+        each group — Stable Audio Open (modality-specific) and UniMoE-Audio
+        (unified) — alongside Ground Truth and AudioCALM; the full baseline
+        lineup is one click away under <em>Compare baselines</em>.
       </p>
       <div id="music-samples" class="samples"></div>
     </section>
@@ -162,6 +179,20 @@
       <p class="section-intro">
         Best per column in <strong>bold</strong>, second-best <u>underlined</u>.
         AudioCALM is a single model evaluated jointly across all three domains.
+      </p>
+      <p class="section-intro">
+        <strong>Metrics.</strong>
+        <em>WER</em> (Whisper-large-v3 word error rate, lower is better) and
+        <em>SIM</em> (cosine similarity between WavLM-Large speaker-verification
+        embeddings of the generation and the reference, higher is better)
+        measure speech intelligibility and speaker fidelity, respectively.
+        <em>FAD</em> is the Fréchet distance in VGGish embedding space
+        (distributional fidelity, lower is better). <em>CLAP</em> is the
+        LAION-CLAP text–audio cosine similarity (prompt adherence, higher is
+        better). <em>MOS</em> is the subjective overall-quality score for
+        speech (1–5, higher is better); <em>MOS-Q</em> and <em>MOS-T</em>
+        are the subjective quality and text-relevance scores for sound and
+        music (1–5, higher is better).
       </p>
 
       <h3>Text-to-speech</h3>

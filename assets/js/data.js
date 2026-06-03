@@ -62,7 +62,7 @@ window.DEMO_DATA = {
       {
         id: "tts-03",
         dataset: "LibriTTS",
-        text: "\"- MILLIGRAM Roughly one twenty eight thousandth of an ounce\"",
+        text: "\"The printer one could, of course, dismiss.\"",
         prompt: "audio/tts/sample03/prompt.wav",
         gt:     "audio/tts/sample03/gt.wav",
         audios: {
@@ -78,7 +78,7 @@ window.DEMO_DATA = {
       {
         id: "tts-04",
         dataset: "LibriTTS",
-        text: "\"The printer one could, of course, dismiss.\"",
+        text: "\"'So there is to me!' added Sandford, with a sarcastic sneer.\"",
         prompt: "audio/tts/sample04/prompt.wav",
         gt:     "audio/tts/sample04/gt.wav",
         audios: {
@@ -94,7 +94,7 @@ window.DEMO_DATA = {
       {
         id: "tts-05",
         dataset: "LibriTTS",
-        text: "\"And so on.\"",
+        text: "\"- MILLIGRAM Roughly one twenty eight thousandth of an ounce\"",
         prompt: "audio/tts/sample05/prompt.wav",
         gt:     "audio/tts/sample05/gt.wav",
         audios: {
@@ -110,7 +110,7 @@ window.DEMO_DATA = {
       {
         id: "tts-06",
         dataset: "LibriTTS",
-        text: "\"'So there is to me!' added Sandford, with a sarcastic sneer.\"",
+        text: "\"And so on.\"",
         prompt: "audio/tts/sample06/prompt.wav",
         gt:     "audio/tts/sample06/gt.wav",
         audios: {
